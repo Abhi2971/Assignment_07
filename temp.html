@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isosceles Trapezoid Container</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 800px; /* Width of the certificate */
+            height: 600px; /* Height of the certificate */
+            margin: 50px auto; /* Center the certificate */
+            border: 2px solid grey;
+            padding: 0px;
+            box-sizing: border-box;
+            position: relative;
+            background-color: grey;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Hide overflow from skewed content */
+            background-color: white;
+        }
+        .trapezoid {
+            position: absolute;
+            top: 0px;
+            right: 90px; /* Adjusted to start from the right side */
+            width: 360%; /* Adjusted width to fill the container */
+            height: 150%;
+            background-color: rgb(68, 1, 79);
+            transform-origin: top;
+            transform: perspective(225px) rotateX(372deg) scaleX(0.60); /* Adjusted scaleX to flip horizontally */
+        }
+        .square1{
+            width: 800px; /* Width of the certificate */
+            height: 440px; /* Height of the certificate */
+            padding: 0px;
+            top: 13%;
+            position: relative;
+            background-image: linear-gradient(to top right,rgba(255, 255, 255, 0.605), rgba(230, 60, 134, 0.99));
+            opacity: 60%;
+        }
+        .square2{
+            width: 800px; /* Width of the certificate */
+            height: 440px; /* Height of the certificate */
+            padding: 0px;
+            top: 13%;
+            position: absolute;
+            background-image: linear-gradient(to bottom left,rgba(166, 141, 141, 0.605), rgba(95, 95, 95, 0.99));
+            opacity: 60%;
+        }
+        .letter{
+            position: absolute;
+            top: 0%;
+            margin-top: 30px;
+            margin-left: 50px;
+
+        }
+        .letter h1{
+            font-size: 90px;
+            color: whitesmoke;
+            font-family: Georgia (serif);    
+        }
+        .para1{
+            position: absolute;
+            top: 37%;
+            margin-left: 8px;
+            font-size: 40px;
+            color: whitesmoke;
+            font-family: monospace;    
+        }
+        .para2{
+            position: absolute;
+            top: 60%;
+            font-size: 22px;
+            margin-left: 8px;
+            color: whitesmoke;
+            font-family: monospace;    
+        }
+        .para3{
+            position: absolute;
+            top: 52%;
+            margin-left: 8px;
+            font-size: 80px;
+            color: black;
+            font-family: "Dancing Script";
+        }
+        .para4{
+            position: absolute;
+            top: 100%;
+            margin-left: 8px;
+            font-size: 26px;
+            color: whitesmoke;
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .para5{
+            position: absolute;
+            top: 117%;
+            margin-left: 8px;
+            font-size: 15px;
+            color: whitesmoke;
+            font-family: monospace;
+        }
+        img{
+            position: inherit;
+            height: 250px;
+            width: 250px;
+            top: 43%;
+            right:-17%;
+        }
+        .para6{
+            position: absolute;
+            top: 160%;
+            left: 10%;
+            margin-left: 8px;
+            font-size: 16px;
+            color: whitesmoke;
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .para7{
+            position: absolute;
+            top: 160%;
+            right: -8%;
+            margin-left: 8px;
+            font-size: 16px;
+            color: black;
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .line1{
+            position: absolute;
+            top: 153%;
+            left: 3%;
+            margin-left: 8px;
+            font-size: 17px;
+            color: white;
+            font-weight: bold;
+        }
+        .line2{
+            position: absolute;
+            top: 153%;
+            right: -12%;
+            margin-left: 8px;
+            font-size: 17px;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="trapezoid"></div>
+        <div class="square1"></div>
+        <div class="square2"></div>
+        <div class="letter">
+            <h1>CERTIFICATE</h1><br>
+            <p class="para1">OF ACHIEVEMENT</p><br>
+            <p class="para2">THIS CERTIFICATE IS PRESESNTED TO</p><br>
+            <p class="para3">Abhishek Shelke</p><br>
+            <p class="para4">Lorem ipsum dolor sit amet consectetur</p><br>
+            <p class="para5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus unde vel sequi ipsam cupiditate, pariatur eum officia rerum iusto fuga quasi possimus praesentium non officiis doloribus minima ad porro itaque dolor eligendi. Quasi eveniet atque aspernatur sit qui amet quia.</p>
+            <img src="logo.png"alt="reload">
+            <p class="line1">_______________</p>
+            <p class="line2">_______________</p>
+            <p class="para6">DATE</p>
+            <p class="para7">SIGNATURE</p>
+        </div>
+    </div>
+</body>
+</html>
